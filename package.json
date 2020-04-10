@@ -1,7 +1,7 @@
 {
   "name": "create-phaser-game",
   "description": "Generate a new Phaser 3 game using Webpack",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "main": "index.js",
   "author": "Tom Scott <tscott@weblinc.com>",
   "license": "MIT",
