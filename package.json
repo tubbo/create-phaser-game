@@ -6,12 +6,16 @@
   "author": "Tom Scott <tscott@weblinc.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "jest",
+    "lint": "eslint index.js src/**/*.js && stylelint src/**/*.css",
+    "clean": "rm -rf tmp"
   },
   "dependencies": {
     "create-minimal-webpack-app": "^1.0.4"
   },
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "jest": "^25.3.0",
     "stylelint": "^13.3.1",
@@ -24,9 +28,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "eslint:recommended",
-      "plugin:react/recommended",
-      "graphql"
+      "eslint:recommended"
     ],
     "parser": "babel-eslint",
     "env": {
@@ -39,20 +41,6 @@
         "error",
         "never"
       ]
-    },
-    "settings": {
-      "react": {
-        "version": "detect",
-        "linkComponents": [
-          {
-            "name": "Link",
-            "linkAttribute": "to"
-          }
-        ]
-      }
-    },
-    "globals": {
-      "ga": true
     }
   },
   "stylelint": {

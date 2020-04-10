@@ -1,0 +1,12 @@
+name: Tests
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node_version: 13.x
+      - run: yarn install --check-files
+      - run: yarn test
