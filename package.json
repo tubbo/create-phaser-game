@@ -1,0 +1,61 @@
+{
+  "name": "create-phaser-game",
+  "description": "Generate a new Phaser 3 game using Webpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Tom Scott <tscott@weblinc.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "create-minimal-webpack-app": "^1.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "jest": "^25.3.0",
+    "stylelint": "^13.3.1",
+    "stylelint-config-recommended": "^3.0.0",
+    "webpack": "^4.42.1",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "bin": {
+    "create-phaser-game": "index.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "graphql"
+    ],
+    "parser": "babel-eslint",
+    "env": {
+      "browser": true,
+      "es6": true,
+      "node": true
+    },
+    "rules": {
+      "semi": [
+        "error",
+        "never"
+      ]
+    },
+    "settings": {
+      "react": {
+        "version": "detect",
+        "linkComponents": [
+          {
+            "name": "Link",
+            "linkAttribute": "to"
+          }
+        ]
+      }
+    },
+    "globals": {
+      "ga": true
+    }
+  },
+  "stylelint": {
+    "extends": "stylelint-config-recommended"
+  }
+}
