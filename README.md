@@ -4,29 +4,25 @@ A template for creating new Phaser 3 games with Webpack.
 
 ## Usage
 
-```bash
-$ yarn create phaser-game [name-of-your-phaser-game]
-```
+    yarn create phaser-game [name-of-your-phaser-game]
 
 This will generate a directory with the following contents:
 
-```
-./name-of-your-phaser-game
-├── index.html
-├── package.json
-├── public
-│   ├── android-chrome-192x192.png
-│   ├── android-chrome-512x512.png
-│   ├── favicon-16x16.png
-│   ├── favicon-32x32.png
-│   ├── favicon.ico
-│   └── site.webmanifest
-├── src
-│   ├── index.css
-│   └── index.js
-├── webpack.config.js
-└── yarn.lock
-```
+    ./name-of-your-phaser-game
+    ├── index.html
+    ├── package.json
+    ├── public
+    │   ├── android-chrome-192x192.png
+    │   ├── android-chrome-512x512.png
+    │   ├── favicon-16x16.png
+    │   ├── favicon-32x32.png
+    │   ├── favicon.ico
+    │   └── site.webmanifest
+    ├── src
+    │   ├── index.css
+    │   └── index.js
+    ├── webpack.config.js
+    └── yarn.lock
 
 The **src/index.js** file is where your `Phaser.Game` will be instantiated.
 You can `import` new scenes from your app into this file like so:
